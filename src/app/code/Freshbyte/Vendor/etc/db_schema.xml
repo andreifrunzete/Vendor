@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<schema xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:framework:Setup/Declaration/Schema/etc/schema.xsd">
+    <table name="Vendors" resource="default" engine="innodb" comment="VendorsTable">
+        <column xsi:type="int" name="ID" padding="10" unsigned="true" nullable="false" identity="true" comment="ID_Vendors"/>
+        <column xsi:type="varchar" name="Name" comment="Name" nullable="false"/>
+        <column xsi:type="varchar" name="Status" comment="Status" nullable="false" default="Enabled"/>
+        <column xsi:type="varchar" name="Email" comment="Email" nullable="false" />
+        <column xsi:type="varchar" name="Action" comment="Action" nullable="false" />
+        <constraint xsi:type="primary" referenceId="PRIMARY">
+            <column name="ID"/>
+        </constraint>
+    </table>
+
+    <table name="Vendors_details" resource="default" engine="innodb" comment="Vendors details Table">
+        <column xsi:type="int" name="id" padding="10" unsigned="true" nullable="false" identity="true" comment="ID"/>
+        <column xsi:type="varchar" name="Name" comment="Name" nullable="false"/>
+        <column xsi:type="varchar" name="Email" comment="Email" nullable="false" />
+        <column xsi:type="varchar" name="Telephone" comment="Telephone" nullable="false" />
+        <constraint xsi:type="primary" referenceId="PRIMARY">
+            <column name="id"/>
+        </constraint>
+    </table>
+
+</schema>

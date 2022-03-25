@@ -1,0 +1,25 @@
+{
+    "Vendors": {
+        "column": {
+            "ID": true,
+            "Name": true,
+            "Status": true,
+            "Email": true,
+            "Action": true
+        },
+        "constraint": {
+            "PRIMARY": true
+        }
+    },
+    "Vendors_details": {
+        "column": {
+            "id": true,
+            "Name": true,
+            "Email": true,
+            "Telephone": true
+        },
+        "constraint": {
+            "PRIMARY": true
+        }
+    }
+}
