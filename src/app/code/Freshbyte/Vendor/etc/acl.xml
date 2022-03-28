@@ -3,7 +3,9 @@
     <acl>
         <resources>
             <resource id="Magento_Backend::admin">
-                <resource id="Freshbyte_Vendor::vendor" title="Vendor" sortOrder="99" />
+            <resource id="Magento_Sales::sales" title="Vendors" translate="title" sortOrder="80">
+
+            </resource>
             </resource>
         </resources>
     </acl>
