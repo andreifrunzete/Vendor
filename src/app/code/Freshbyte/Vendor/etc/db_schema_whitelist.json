@@ -1,26 +1,29 @@
 {
     "vendors": {
         "column": {
-            "Id": true,
-            "Name": true,
-            "Status": true,
-            "Email": true,
-            "Telephone": true
+            "id": true,
+            "name": true,
+            "status": true,
+            "email": true,
+            "telephone": true
         },
         "constraint": {
             "PRIMARY": true
+        },
+        "index": {
+            "VENDORS_NAME": true
         }
     },
     "vendors_address": {
         "column": {
-            "Id": true,
-            "Contact Name": true,
-            "Street": true,
-            "City": true,
-            "Postal Code": true,
-            "Country": true,
-            "State\/Region": true,
-            "Id_vendor": true
+            "id": true,
+            "contact name": true,
+            "street": true,
+            "city": true,
+            "postal code": true,
+            "country": true,
+            "state\/region": true,
+            "id_vendor": true
         },
         "constraint": {
             "PRIMARY": true,

@@ -2,33 +2,34 @@
 <schema xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
         xsi:noNamespaceSchemaLocation="urn:magento:framework:Setup/Declaration/Schema/etc/schema.xsd">
     <table name="vendors" resource="default" engine="innodb" comment="VendorsTable">
-        <column xsi:type="int" name="Id" padding="10" unsigned="true" nullable="false" identity="true" comment="Id_Vendors"/>
-        <column xsi:type="varchar" name="Name" comment="Name" nullable="false"/>
-        <column xsi:type="varchar" name="Status" comment="Status" nullable="false" default="Enabled"/>
-        <column xsi:type="varchar" name="Email" comment="Email" nullable="false" />
-        <column xsi:type="varchar" name="Telephone" comment="Telephone" nullable="false" />
+<!--        Litera mica coloane-->
+        <column xsi:type="int" name="id" padding="10" unsigned="true" nullable="false" identity="true" comment="Id_Vendors"/>
+        <column xsi:type="varchar" name="name" comment="Name" nullable="false"/>
+        <column xsi:type="varchar" name="status" comment="Status" nullable="false" default="Enabled"/>
+        <column xsi:type="varchar" name="email" comment="Email" nullable="false" />
+        <column xsi:type="varchar" name="telephone" comment="Telephone" nullable="false" />
         <constraint xsi:type="primary" referenceId="PRIMARY">
-            <column name="Id"/>
+            <column name="id"/>
         </constraint>
         <index referenceId="FRESHBYTE_VENDOR_NAME" indexType="fulltext">
-            <column name="Name"/>
+            <column name="name"/>
         </index>
     </table>
 
     <table name="vendors_address" resource="default" engine="innodb" comment="Vendors details Table">
-        <column xsi:type="int" name="Id" padding="10" unsigned="true" nullable="false" identity="true" comment="Id"/>
-        <column xsi:type="varchar" name="Contact Name" comment="Contact Name" nullable="false"/>
-        <column xsi:type="varchar" name="Street" comment="Street" nullable="false" />
-        <column xsi:type="varchar" name="City" comment="City" nullable="false" />
-        <column xsi:type="varchar" name="Postal Code" comment="Postal Code" nullable="false" />
-        <column xsi:type="varchar" name="Country" comment="Country" nullable="false" />
-        <column xsi:type="varchar" name="State/Region" comment="State/Region" nullable="false" />
-        <column xsi:type="int" name="Id_vendor" padding="10" unsigned="true" nullable="false"  comment="Id_vendor"/>
+        <column xsi:type="int" name="id" padding="10" unsigned="true" nullable="false" identity="true" comment="Id"/>
+        <column xsi:type="varchar" name="contact name" comment="Contact Name" nullable="false"/>
+        <column xsi:type="varchar" name="street" comment="Street" nullable="false" />
+        <column xsi:type="varchar" name="city" comment="City" nullable="false" />
+        <column xsi:type="varchar" name="postal code" comment="Postal Code" nullable="false" />
+        <column xsi:type="varchar" name="country" comment="Country" nullable="false" />
+        <column xsi:type="varchar" name="state/region" comment="State/Region" nullable="false" />
+        <column xsi:type="int" name="id_vendor" padding="10" unsigned="true" nullable="false"  comment="Id_vendor"/>
         <constraint xsi:type="primary" referenceId="PRIMARY">
-            <column name="Id"/>
+            <column name="id"/>
         </constraint>
         <constraint xsi:type="foreign" referenceId="FL_Vendors_Id" table="vendors_address"
-                    column="Id_vendor" referenceTable="vendors" referenceColumn="Id"
+                    column="id_vendor" referenceTable="vendors" referenceColumn="id"
                     onDelete="CASCADE"/>
     </table>
 
