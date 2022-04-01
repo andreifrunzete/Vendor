@@ -1,3 +1,6 @@
 src/
 !src/app
+!src/app/*/
+!src/app/code/**
+!src/app/design/**
 /.idea
