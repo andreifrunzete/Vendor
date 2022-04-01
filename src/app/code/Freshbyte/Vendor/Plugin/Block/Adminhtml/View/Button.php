@@ -13,7 +13,9 @@ class Button
                 'label' => __('Add New Vendor'),
                 'class' => __('custom-button'),
                 'id' => 'order-view-custom-button',
-                'onclick' => 'setLocation(\'' . $subject->getUrl('routes/controller/action') . '\')'
+//                'onclick' => 'setLocation(\'' . $subject->getUrl('routes/controller/action') . '\')'
+                'onclick' => 'setLocation(\'' . $subject->getUrl('Freshbyte\Vendor\Block\Adminhtml\Posts\Edit\Tab\Tabs') . '\')'
+
             ]
         );
     }
