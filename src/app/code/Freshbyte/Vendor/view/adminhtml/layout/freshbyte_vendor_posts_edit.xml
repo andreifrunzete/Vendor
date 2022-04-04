@@ -3,7 +3,7 @@
     <update handle="styles"/>
     <body>
         <referenceContainer name="content">
-            <uiComponent name="freshbyte_vendor_posts_editvendor"/>
+            <uiComponent name="freshbyte_vendor_posts_addvendor"/>
         </referenceContainer>
     </body>
 </page>

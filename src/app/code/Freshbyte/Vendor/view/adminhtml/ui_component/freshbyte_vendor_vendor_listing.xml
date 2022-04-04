@@ -12,7 +12,7 @@
         </deps>
         <buttons>
             <button name="add">
-                <url path="Freshbyte\Vendor\Block\Adminhtml\Posts\Edit\Tab"/>
+                <url path="Freshbyte\Vendor\Posts\NewAction"/>
                 <class>primary</class>
                 <label translate="true">Add new Vendor</label>
             </button>
