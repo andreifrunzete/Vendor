@@ -12,9 +12,9 @@
         </deps>
         <buttons>
             <button name="add">
-                <url path="Freshbyte\Vendor\Posts\NewAction"/>
+                <url path="*/posts/newAction"/>
                 <class>primary</class>
-                <label translate="true">Add new Vendor</label>
+                <label translate="true">Add New Vendor</label>
             </button>
         </buttons>
     </settings>
