@@ -23,8 +23,4 @@
         </arguments>
     </type>
 
-    <!--Add a button-->
-    <type name="Magento\Sales\Block\Adminhtml\Order\View">
-        <plugin name="sales_order_adminhtml_view_custom_button_plugin" type="Freshbyte\Vendor\Plugin\Block\Adminhtml\View"/>
-    </type>
 </config>

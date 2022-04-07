@@ -2,10 +2,9 @@
 <schema xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
         xsi:noNamespaceSchemaLocation="urn:magento:framework:Setup/Declaration/Schema/etc/schema.xsd">
     <table name="vendors" resource="default" engine="innodb" comment="VendorsTable">
-<!--        Litera mica coloane-->
         <column xsi:type="int" name="id" padding="10" unsigned="true" nullable="false" identity="true" comment="Id_Vendors"/>
         <column xsi:type="varchar" name="name" comment="Name" nullable="false"/>
-        <column xsi:type="varchar" name="status" comment="Status" nullable="false" default="Enabled"/>
+        <column xsi:type="boolean" name="status" comment="Status" nullable="false" default="Enabled"/>
         <column xsi:type="varchar" name="email" comment="Email" nullable="false" />
         <column xsi:type="varchar" name="telephone" comment="Telephone" nullable="false" />
         <constraint xsi:type="primary" referenceId="PRIMARY">

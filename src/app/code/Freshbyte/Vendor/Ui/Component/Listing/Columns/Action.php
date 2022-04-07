@@ -47,7 +47,7 @@ class Action extends Column
             foreach ($dataSource['data']['items'] as &$item) {
                 $item[$this->getData('name')]['edit'] = [
                     'href' => $this->urlBuilder->getUrl(
-                        'vendor/test/edit',
+                        'freshbyte_vendor/posts/edit',
                         ['id' => $item['id']]
                     ),
                     'label' => __('Edit'),

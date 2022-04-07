@@ -2,7 +2,6 @@
 
 <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
     <menu>
-
         <add
             id="Vendors::vendors"
             title="Vendors"
@@ -11,8 +10,5 @@
             parent="Magento_Sales::sales_operation"
             action="freshbyte_vendor/vendor/index"
             resource="Magento_Sales::create"/>
-
-
-
     </menu>
 </config>

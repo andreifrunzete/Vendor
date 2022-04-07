@@ -18,6 +18,7 @@
             </button>
         </buttons>
     </settings>
+
     <dataSource name="freshbyte_vendor_vendor_listing_data_source">
         <argument name="dataProvider" xsi:type="configurableObject">
             <argument name="class" xsi:type="string">Magento\Framework\View\Element\UiComponent\DataProvider\DataProvider</argument>
@@ -35,6 +36,7 @@
             </argument>
         </argument>
     </dataSource>
+
     <listingToolbar name="listing_top">
         <argument name="data" xsi:type="array">
             <item name="config" xsi:type="array">
@@ -47,6 +49,7 @@
         <filters name="listing_filters" />
         <paging name="listing_paging"/>
     </listingToolbar>
+
     <columns name="freshbyte_vendor_vendor_columns">
         <selectionsColumn name="ids">
             <argument name="data" xsi:type="array">
@@ -58,6 +61,7 @@
                 </item>
             </argument>
         </selectionsColumn>
+
         <column name="id">
             <argument name="data" xsi:type="array">
                 <item name="config" xsi:type="array">
@@ -83,6 +87,7 @@
                 </item>
             </argument>
         </column>
+
         <column name="status">
             <argument name="data" xsi:type="array">
                 <item name="config" xsi:type="array">
@@ -97,6 +102,7 @@
                 </item>
             </argument>
         </column>
+
         <column name="email">
             <argument name="data" xsi:type="array">
                 <item name="config" xsi:type="array">
