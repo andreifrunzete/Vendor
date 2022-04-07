@@ -10,7 +10,13 @@
 
     <settings>
         <buttons>
+            <button name="save">
+                <url path="*/posts/save"/>
+                <class>primary</class>
+                <label translate="true">Save Vendor</label>
+            </button>
             <button name="save_and_continue" class="Magento\CatalogRule\Block\Adminhtml\Edit\SaveAndContinueButton"/>
+            <button name="reset" class="Magento\CatalogRule\Block\Adminhtml\Edit\ResetButton"/>
             <button name="back">
                 <url path="*/*/"/>
                 <class>back</class>
@@ -76,7 +82,7 @@
             </formElements>
         </field>
 
-        <field name="name" formElement="input" sortOrder="30">
+        <field name="name" formElement="input" sortOrder="30" >
             <settings>
                 <visible>true</visible>
                 <elementTmpl>ui/form/element/input</elementTmpl>
